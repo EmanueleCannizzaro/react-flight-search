@@ -1,5 +1,5 @@
 import React from 'react';
-import './FlightOffers.css';
+import './FlightOffer.css';
 import moment from 'moment';
 import {ScaleLoader} from 'react-spinners';
 
@@ -90,7 +90,7 @@ Input props:
     legs: an array of flight legs
     offers: an array of offers for all flight legs
 */
-const FlightOffers = ({isLoading = false, legs = [], offers = []}) => {
+const FlightOffer = ({isLoading = false, legs = [], offers = []}) => {
     if (isLoading) {
         return (
             <div className="fs-offers">
@@ -112,4 +112,4 @@ const FlightOffers = ({isLoading = false, legs = [], offers = []}) => {
     );
 };
 
-export default FlightOffers;
+export default FlightOffer;

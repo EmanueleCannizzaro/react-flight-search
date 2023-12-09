@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import FlightSearch from './components/FlightSearch';
-import FlightOffers from './components/FlightOffers';
+import FlightOffer from './components/FlightOffer';
 import {stringify} from 'query-string';
 import mockFetch from './mock-fetch';
 
@@ -74,7 +74,7 @@ class App extends Component {
           <FlightSearch
               /* TODO: send this component a function to call to initiate the search (available here as `this.searchFlights`) */
           />
-          <FlightOffers
+          <FlightOffer
               /* TODO: send this component the legs, offers, and whether or not the results are loading */
           />
         </div>
